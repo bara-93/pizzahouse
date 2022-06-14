@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;1,100;1,200;1,300&display=swap');
+*{
+    margin:0 ; 
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+.upcom_events_items_img{
+    cursor: pointer;
+}
+
+.upcom_events_items_overlay{
+    background-color: rgba(0,0,0,.7);
+    transform: scale(0);
+    transition: 0.05s;
+
+}
+.upcom_events_items_overlay > p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.upcom_events_items_img:hover .upcom_events_items_overlay{
+    transform: scale(1);
+}
