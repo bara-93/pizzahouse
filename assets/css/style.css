@@ -1,0 +1,257 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
+@font-face {
+    font-family:'Journal' ;
+    src: url(../vendor/Fonts/JournalItalic_Medium.ttf);
+    font-style: normal;
+}
+
+*{
+    margin:0 ; 
+    padding: 0;
+    box-sizing: border-box;
+}
+/* global variables */
+:root{
+    --upcom-main-col:#548c1d;
+    --contact_main-col:#F12222;
+}
+/* upcoming Events Section */
+.upcomingEvents{
+    background-image: url(https://pizzahouse.themerex.net/wp-content/uploads/2016/08/bg_section.jpg?id=1191) !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+}
+.upcomingEvents_header{
+    font-weight:500;
+    font-size: 25px;
+    font-family: Journal;
+    color: var(--upcom-main-col);
+}
+.upcomingEvents_title{
+
+    font-family: 'Merriweather Sans', sans-serif; 
+    font-size: 45px;   
+}
+
+.upcom_events_items_img{
+    cursor: pointer;
+}
+
+.upcom_events_items_overlay{
+    background-color: rgba(0,0,0,.7);
+    transform: scale(0);
+    transition: all 0.3s;
+    /* transition-delay:0.3s ; */
+
+}
+.upcom_events_items_overlay > p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 75px;
+    height: 75px;
+    text-align: center;
+}
+
+.upcom_events_items_img:hover .upcom_events_items_overlay{
+    transform: scale(1);
+}
+
+.upcom_events_items_overlay_link{
+color: #fff;
+}
+.sc_events_item_date{
+    background-color: var(--upcom-main-col);
+}
+.upcom_events_items .card-body .card-title{
+    margin: auto;
+}
+.upcom_events_items .card-body .card-title a{
+    color:#000;
+    text-decoration: none;
+    text-transform: capitalize;
+
+}
+.card_moreDetails{
+    width:65%;
+    margin: auto;
+    margin-top: 10px;
+}
+.card_moreDetails a{
+    text-decoration: none;
+    color:var(--upcom-main-col);
+    text-transform: uppercase;
+    font-size: 13px;
+    font-family: 'graviola', sans-serif;
+
+}
+.container{
+    width: 82%;
+}
+/* start Media Query Upcoming Events Section */
+@media (max-width: 576px) {
+   .container{
+    width:95%;
+   }
+   .upcomingEvents{
+    padding: 0 !important;
+   }
+   .upcomingEvents_header{
+    font-weight:300;
+    font-size: 15px;
+    font-family: Journal;
+    color: rgb(84, 140, 29);
+}
+.upcomingEvents_title{
+
+    font-family: 'Merriweather Sans', sans-serif; 
+    font-size: 20px; 
+    padding-bottom: 15px !important;  
+}
+.upcom_events_items_overlay > p{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(140%,50%);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+}
+.sc_events_item_date{
+    font-size: 12px;
+}
+.upcom_events_items .card-body .card-title{
+    font-size: 15px;
+    font-weight: 700;
+    width: 100% !important;
+}
+.card_moreDetails a{
+    font-size: 11px;
+    font-weight: 600;
+}
+.sc_events_item_date{
+    margin: 20px auto !important;
+}
+}
+
+@media (min-width:768px) and (max-width:992px){
+
+    .container{
+        width:100% !important;
+       }
+       .upcomingEvents_header{
+        font-weight:500;
+        font-size: 20px;
+        font-family: Journal;
+        color: rgb(84, 140, 29);
+    }
+    .upcomingEvents_title{
+    
+        font-family: 'Merriweather Sans', sans-serif; 
+        font-size: 32px; 
+        padding-bottom: 15px !important;  
+    }
+    
+    .upcom_events_items_overlay > p{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 60px;
+        height: 60px;
+        text-align: center;
+    }
+    .sc_events_item_date{
+        font-size: 12px;
+    }
+    .upcom_events_items .card-body .card-title{
+        font-size: 14px;
+        font-weight: 600;
+        width: 100% !important;
+    }
+   .card .card-body .card_moreDetails{
+        transition: all 0.5s;
+
+    }
+    .card_moreDetails a{
+        font-size: 11px;
+        font-weight: 600;
+    }
+    .sc_events_item_date{
+        margin: 20px auto !important;
+    }
+    
+}
+/* End Upcinung Events Section */
+
+/* start Contact Information Section */
+.contact_Info_maps_img_pic{
+   background-image:url(https://pizzahouse.themerex.net/wp-content/uploads/2016/08/image_1.jpg);
+   background-repeat:no-repeat;
+   background-size:cover;
+   background-position: center ;
+}
+.contact_Info_Informations_phone a{
+    transition: 0.5s;
+}
+.contact_Info_Informations_phone a:hover{
+    color: #000 !important;
+}
+
+/* Social media Secion */
+.contact_Info_Informations_dash{
+    height:3px;
+    background-image: url(https://pizzahouse.themerex.net/wp-content/uploads/2016/08/bg_line.png);
+    background-repeat: repeat-x;
+
+
+}
+.socialMedia_Identifier{
+    font-size: 15px;
+    text-transform: capitalize;
+}
+.icon_container{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: var(--contact_main-col);
+    /* padding: 15px; */
+    
+    
+}
+.socialMedia_Identifier{
+    margin-left: 10px;
+}
+.contact_Info_Informations_socialMedia_item{
+    padding: 20px;
+}
+.icon_container i{
+    display: inline-block;
+    font-size: 15px;
+    transform: translate(0%,-30%);
+}
+.card .card-body .card_moreDetails a, .card .card-body .card-title a{
+    transition: all 0.5s;
+}
+.card .card-body .card_moreDetails:hover a,.card .card-body .card-title:hover a{
+    color: var(--contact_main-col);
+}
+
+.card .card-body .card_moreDetails a,.card .card-body .card-title a {
+    transition: all s;
+}.contact_Info_Informations_socialMedia_items .contact_Info_Informations_socialMedia_item >a{
+    transition: 0.3s;
+}
+.contact_Info_Informations_socialMedia_items .contact_Info_Informations_socialMedia_item a:hover {
+color: var(--contact_main-col) !important;
+}
+ 
+ .social_Media_Icon{ 
+    font-size: 20px;
+    /* transform: translateX(-20%); */
+ } 
+
+/* start crud form  */

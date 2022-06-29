@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="vendor/css/all.min.css">
+    <link rel="stylesheet" href="vendor/css/bootstrap.min.css">
+</head>
+<body>
+    <div class="container crud_container m-auto">
+        <div class="row  ">
+            <div class="col-md-10 offset-md-1 ">
+                <div class="socialMedia_Link m-5 ">
+                                        
+                    <label for="basic-url">facebook page link</label>
+                    <div class="input-group ">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text pb-3"><i class="fa-brands fa-facebook-f"></i></span>
+                    </div>
+                    <input type="text" class="form-control socialMedia_Identifier text-lowercase" id="fb_Input" aria-describedby="basic-addon3" onkeyup="fbValidate()">
+                    </div>
+                    <div class="alert alert-danger d-none fb_error" role="alert">
+                        please enter valid link  e.g: http://www.fb.com/(pageNAme)
+                    </div>
+                    <label for="basic-url">Twitter page link</label>
+                    <div class="input-group ">
+                    <div class="input-group-prepend">
+                        <span class="input-group-text pb-3" ><i class="fa-brands fa-twitter"></i></span>
+                    </div>
+                    <input type="text" class="form-control socialMedia_Identifier text-lowercase" id="twitter_Input" aria-describedby="basic-addon3"onkeyup="tweetValidate()">
+                    </div>
+                    <div class="alert alert-danger d-none tw_error" role="alert">
+                        please enter valid link  e.g: http://www.Twitter.com/(pageNAme)
+                    </div>
+                    <label for="basic-url">Instagram page link</label>
+                    <div class="input-group ">
+                    <div class="input-group-prepend ">
+                        <span class="input-group-text pb-3 " ><i class="fa-brands fa-instagram"></i></span>
+                    </div>
+                    <input type="text" class="form-control socialMedia_Identifier text-lowercase" id="instagram_Input" aria-describedby="basic-addon3"onkeyup="instValidate()">
+                    </div>
+                    <div class="alert alert-danger d-none ins_error" role="alert">
+                        please enter valid link  e.g: http://www.instagram.com/(pageNAme)
+                    </div>
+                    
+                    <div class="submit_Btn d-flex justify-content-center mt-5">
+                        <button class="btn btn-secondary px-5" id="social_Media_Btn"> Add</button>
+                    </div>
+                </div>
+            </div>
+           
+
+            <table class="table table-striped">
+                <thead>
+                  <tr>
+                    
+                    <th scope="col">fb_link</th>
+                    <th scope="col">twitter_Link</th>
+                    <th scope="col">Instagram_link</th>
+                    <th scope="col" class="d-flex justify-content-end">Operation</th>
+
+                  </tr>
+                </thead>
+                <tbody id="social_Crud_Container">
+                 
+                </tbody>
+              </table>
+
+            </div>
+            </div>
+            </body>
+
+
+<script src="vendor/js/all.min.js"></script>
+<script src="vendor/js/bootstrap.bundle.min.js"></script>
+<script src="vendor/js/jquery-3.6.0.min.js"></script>
+<script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script src="assets/js/socialMediaCrud.js" ></script>
+
+
+
+
+</body>
+</html>
