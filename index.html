@@ -14,7 +14,8 @@
     <link rel="icon" href="https://pizzahouse.themerex.net/wp-content/uploads/2016/08/cropped-favicon-1-32x32.jpg" sizes="32x32">
     <!-- embeded font ['graviola', sans-serif] -->
     <link href="https://blogfonts.com/css/aWQ9MTUwOTEzJnN1Yj05MTMmYz1nJnR0Zj1HcmF2aW9sYS1SZWd1bGFyLm90ZiZuPWdyYXZpb2xh/Graviola.otf" rel="stylesheet" type="text/css"/>
-
+    <!-- custom css for currency convertor -->
+    <link rel="stylesheet" href="assets/css/currencyConverter.css">
     <title>PizzaHouse</title>
 </head>
 <body>
@@ -146,15 +147,37 @@
 </div>
 
 </section>
-
-
-
 <!-- End Contant Info Section -->
+
+<!-- include Currency Converter Page -->
+<div class="bigContainer row ">
+  
+  <div class="container_t text-bg-info col-md-7 offset-md-1">
+    <h1>Currency Convertor</h1>
+    <div class="box">
+        <div class="left_box">
+            <select name="currency" class="currency"></select>
+            <input type="number" name="" id="num">
+        </div>
+        <div class="right_box">
+            <select name="currency" class="currency"></select>
+            <input type="text" name="" id="ans" disabled>
+        </div>
+    </div>
+    <button class="btn" id="btn">Convert</button>
+  </div>
+
+  <div class="t1 col-md-4">
+  
+  </div>
+  
+</div>
 
 <script src="vendor/js/all.min.js">
 </script><script src="vendor/js/bootstrap.bundle.min.js"></script>
 <script src="vendor/js/jquery-3.6.0.min.js"></script>
 <script src="assets/js/main.js" ></script>
+<script src="assets/js/currencyConverter.js"></script>
 
 
 
