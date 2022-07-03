@@ -76,7 +76,11 @@ function addDish() {
     timer: 1500
   });
   localStorage.setItem("dishesList", JSON.stringify(dishes));
-
+  dishName.classList.add("is-invalid") ;
+  dishImage.classList.add("is-invalid");
+   dishType.classList.add("is-invalid") ;
+    dishPrice.classList.add("is-invalid") ; 
+    dishDescription.classList.add("is-invalid");
 }
 
 function showDishes() {
