@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap');
 @font-face {
     font-family:'Journal' ;
-    src: url(../vendor/Fonts/JournalItalic_Medium.ttf);
+    src: url(/pizzahouse/vendor/Fonts/JournalItalic_Medium.ttf);
     font-style: normal;
 }
 
@@ -15,6 +15,196 @@
     --upcom-main-col:#548c1d;
     --contact_main-col:#F12222;
 }
+
+/* Start  Featured Dishes Section  */
+
+.featured_dishes {
+     background-image: url(../img/bg-img-section3/bg.jpg);
+     position: relative;
+ }
+
+
+ .sec_title h2::before {
+     content: "\f818";
+     font-family: "Font Awesome 5 Free";
+     font-weight: 900;
+     color: #ca0808;
+     display: block;
+     position: absolute;
+     top: 0;
+     left: 50%;
+    transform: translateX(-50%);
+     height: 26px;
+     line-height: 26px;
+     width: 167px;
+     font-size: 22px;
+     background-image: url(../img/logo/bg_style_title.png);
+     background-position: center center;
+     background-repeat: no-repeat;
+     background-size: 100% auto;
+
+ }
+
+ .sec_title{
+     margin-bottom: 25px;
+ }
+ .sec_title h2 {
+     font-family: "Graviolasoft", sans-serif;
+     font-size: 3.214em;
+     line-height: 1.25em;
+     padding-top: 45px;
+     position: relative;
+    
+ }
+
+ .dishes_list {
+     background-color: #f5f5f5;
+     border-radius: 21px;
+
+     margin: 0 1px;
+     letter-spacing: .9px;
+     text-transform: uppercase;
+
+ }
+
+ .nav-pills .nav-link.active,
+ .nav-pills .show>.nav-link {
+     color: white;
+     background-color: #548c1d;
+     border-radius: 21px;
+ }
+
+ .list_item button {
+     font-family: "Graviolasoft",sans-serif;
+     font-style: none;
+    font-weight: 500;
+     font-size: 13px;
+     line-height: 22px;
+     font-weight: 500;
+     border-radius: 21px;
+     color: #a1a1a1;
+
+ }
+ .nav-pills .nav-link{
+     border-radius: 21px !important;
+ }
+
+ .list_item{
+    border-radius: 21px;
+ }
+ .list_item button:hover{
+     cursor: pointer;
+     background-color: #548c1d;
+     color: white;
+     border-radius: 21px;
+ }
+.sec_list{
+    padding-bottom: 10px;
+}
+
+ .menuitem_desc {
+     border-top: 1px dashed #e3e3e3;
+ }
+
+ .card{
+     border: none;
+ }
+ 
+ .menuitem_img img{
+
+
+width: 100%;
+ }
+
+ .menuitem_desc{
+    border-top: 1px dashed #e3e3e3;
+    display: inline-block;
+    margin-top: 8px;
+    padding-top: 11px;
+    width: 100%;
+    font-size: 0.929em;
+    line-height: 1.2em;
+    font-family: "Graviolasoft",sans-serif;
+    color: #717272;
+ }
+ .menuitem_price{
+     float: right;
+     font-size: 1.071em;
+     font-weight: 500;
+     line-height: 1.2em;
+     margin-left: 1em;
+     margin-top: 6px;
+     color: #ca0808;
+     font-family:sans-serif;
+
+ }
+
+.btn_see_more{
+    background-color: #ca0808;
+    font-weight: 500;
+     font-family: "Graviolasoft",sans-serif;
+     font-size:12px     ;
+     line-height: 14.3052px     ;
+     letter-spacing: 1.1004px;
+     color: #fff;
+    padding:14.8554px 26.4096px    ;
+     border-radius: 2.3em;
+     text-transform: uppercase;
+     border: solid 2px #ca0808 ;
+}
+.btn_see_more:focus{
+box-shadow: none !important;
+background-color:transparent;
+color: #ca0808 !important;
+
+}
+
+/* End  Featured Dishes Section  */
+ /* start weather section*/
+.weatherInfo{
+    background-image: url(/pizzahouse/assets/img/weather/cloud-blue-sky_1232-3108.webp);
+  background-repeat: no-repeat;
+  background-size: cover; 
+  font-family: 'Open Sans', sans-serif;
+  font-size: 120%;
+}
+.weatherCard{
+    background-color: #2e7bfb5c;
+    color: #fff;
+    border-radius: 30px;
+    max-width: 500px;
+    padding: 2em;
+    margin: 1em;
+ 
+}
+.search button{
+margin: 0.5em;
+border-radius: 50%;
+border: none;
+height: 44px;
+width: 44px;
+outline: none;
+background: #2e7bfbb8;
+color: #fff;
+cursor: pointer;
+transition: 0.5s ease-in-out;
+}
+.search button:hover{
+    background-color: #7c7c7c6b;
+}
+.search-bar{
+border: none;
+outline: none;
+/* border-radius: 24px; */
+background: #2e7bfbb8;
+color: #fff;
+font-family: inherit;
+font-size: 105%;
+width: 100%;
+margin: 5px;
+} 
+
+ /* end weather section*/
 /* upcoming Events Section */
 .upcomingEvents{
     background-image: url(https://pizzahouse.themerex.net/wp-content/uploads/2016/08/bg_section.jpg?id=1191) !important;

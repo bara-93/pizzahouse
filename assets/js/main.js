@@ -1,4 +1,146 @@
+ /* Start js for Featured Dishes Section  */
+ let pizzaDish = document.querySelector(".pizza-dishs");
+let pastaDish = document.querySelector(".pasta-dishs");
+let saladDish = document.querySelector(".salad-dishs");
+let drinks =document.querySelector(".drinks");
 
+
+
+
+let dishes;
+if (localStorage.getItem("dishesList") == null) {
+
+    dishes = [];
+  console.log("hi1");
+  } else {
+    dishes = JSON.parse(localStorage.getItem("dishesList"));
+  console.log("hi2");
+  }
+  showPastaDishes();
+
+
+function showPastaDishes() {
+    pastInfo = "";
+    for (var i = 0; i < dishes.length; i++) {
+      if (dishes[i].type == "pasta") {
+        
+        pastInfo += ` 
+         <div class="card mb-3 col-md-6">
+      <div class="row g-0">
+          <div class="col-md-3 menuitem_img ">
+              <img src="${dishes[i].image}"
+                  class="img-fluid rounded-circle " alt="...">
+          </div>
+          <div class="col-md-9 ">
+              <div class="card-body menuitem_info ">
+                  <h5 class="card-title menuitem_title text-start text-capitalize ">${dishes[i].name} <span
+                          class=" menuitem_price text-end">${dishes[i].price}.00$</span></h5>
+  
+  
+                  <p class=" menuitem_desc text-start">${dishes[i].description}</p>
+              </div>
+          </div>
+      </div>
+      </div>
+      `;
+  
+      }
+     
+    }
+    pastaDish.innerHTML = pastInfo;
+  
+  }
+  
+  function showPizzaDishes() {
+    console.log("pizza");
+    let pizzaInfo = "";
+    for (var i = 0; i < dishes.length; i++) {
+      if (dishes[i].type == "pizza") {
+        pizzaInfo += `   <div class="row g-0">
+        <div class="card mb-3 col-md-6">
+      <div class="row g-0">
+          <div class="col-md-3 menuitem_img ">
+              <img src="${dishes[i].image}"
+                  class="img-fluid rounded-circle " alt="...">
+          </div>
+          <div class="col-md-9 ">
+              <div class="card-body menuitem_info ">
+                  <h5 class="card-title menuitem_title text-start">${dishes[i].name} <span
+                          class=" menuitem_price text-end">${dishes[i].price}.00$</span></h5>
+  
+  
+                  <p class=" menuitem_desc text-start">${dishes[i].description}</p>
+              </div>
+          </div>
+      </div>
+      </div>
+  </div>`;
+  
+      }
+  
+    }
+    pizzaDish.innerHTML = pizzaInfo;
+  }
+  function showSaladDishes() {
+    let saladInfo = "";
+    for (var i = 0; i < dishes.length; i++) {
+      if (dishes[i].type == "salads") {
+        saladInfo += `   <div class="row g-0">
+        <div class="card mb-3 col-md-6">
+      <div class="row g-0">
+          <div class="col-md-3 menuitem_img ">
+              <img src="${dishes[i].image}"
+                  class="img-fluid rounded-circle " alt="...">
+          </div>
+          <div class="col-md-9 ">
+              <div class="card-body menuitem_info ">
+                  <h5 class="card-title menuitem_title text-start">${dishes[i].name} <span
+                          class=" menuitem_price text-end">${dishes[i].price}.00$</span></h5>
+  
+  
+                  <p class=" menuitem_desc text-start">${dishes[i].description}</p>
+              </div>
+          </div>
+      </div>
+      </div>
+  </div>`;
+  
+      }
+  
+    }
+    saladDish.innerHTML = saladInfo;
+  }
+  function showDrinks() {
+    let drinksInfo = "";
+    for (var i = 0; i < dishes.length; i++) {
+      if (dishes[i].type == "drinks") {
+        drinksInfo += `   <div class="row g-0">
+       <div class="card mb-3 col-md-6">
+      <div class="row g-0">
+          <div class="col-md-3 menuitem_img ">
+              <img src="${dishes[i].image}"
+                  class="img-fluid rounded-circle " alt="...">
+          </div>
+          <div class="col-md-9 ">
+              <div class="card-body menuitem_info ">
+                  <h5 class="card-title menuitem_title text-start">${dishes[i].name} <span
+                          class=" menuitem_price text-end">${dishes[i].price}.00$</span></h5>
+  
+  
+                  <p class=" menuitem_desc text-start">${dishes[i].description}</p>
+              </div>
+          </div>
+      </div>
+      </div>
+  </div>`;
+  
+      }
+  
+    }
+    drinks.innerHTML = drinksInfo;
+  }
+ /* End js for Featured Dishes Section  */
+ 
 if(localStorage.getItem("links") == null){
     let link = [];
 }else {
